@@ -6,7 +6,7 @@
  
 .container {
     font-family: 'Roboto',sans-serif;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #012128;
     display: flex;
@@ -35,8 +35,8 @@
 }
 
 .ellipsContainer {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     /*background-color: rgba(0,0,0,0.3);*/
     position: absolute;
 }
@@ -124,4 +124,14 @@
     .divider {width: 500px;}
     .login {font-size: 40px;}
     .main {width: 600px;}
+}
+
+@media (max-width: 550px) {
+    .register {width: 350px; display: block; text-align: center;}
+    .labels {font-size: 17px;}
+    .fields {width: 275px;}
+    .divider {width: 275px;}
+    .login {font-size: 35px;}
+    .main {width: 300px;}
+    .btn {margin-top: 20px}
 }

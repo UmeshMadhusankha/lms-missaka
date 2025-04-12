@@ -39,7 +39,7 @@ function LoginPage() {
               col3="rgba(122, 27, 114, 0.5)"
               col4="rgba(96, 14, 121, 0.5)"
               left="80vw"
-              bottom="-25vh"/>
+              bottom="-30vh"/>
             <GlowingBGCricle className={styles.glowingCircle}
               size="45vw"
               maxSize="315px"
