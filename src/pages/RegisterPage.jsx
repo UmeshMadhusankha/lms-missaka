@@ -12,6 +12,12 @@ function RegisterPage() {
     {value : "other" ,label : "Other"}
   ]
 
+  const shies = [
+    {value : "1" ,label : "1st Shy"},
+    {value : "2" ,label : "2nd Shy"},
+    {value : "3" ,label : "3rd Shy"}
+  ]
+
   const listStyles = {
     control : (styles) => ({...styles,
       marginTop: "1vh",
@@ -78,7 +84,7 @@ function RegisterPage() {
               col3="rgba(122, 27, 114, 0.5)"
               col4="rgba(96, 14, 121, 0.5)"
               left="80vw"
-              bottom="-30vh"/>
+              bottom="-100vh"/>
             <GlowingBGCricle className={styles.glowingCircle}
               size="45vw"
               maxSize="315px"
@@ -89,7 +95,7 @@ function RegisterPage() {
               col3="rgba(29, 151, 110, 0.5)"
               col4="rgba(29, 151, 110, 0.25)"
               left="-15vw" 
-              bottom="5vh"/>
+              bottom="50vh"/>
         </div>
         <div className={styles.image}>
           <img src={logo} className={styles.logo}/>
@@ -115,12 +121,18 @@ function RegisterPage() {
             <input type='text' placeholder='Postal Code' className={styles.inputFieldsAddr}/>
             <label htmlFor="stream" className={styles.labels}>Stream:</label>
             <Select options={streams}  styles={listStyles}/>
+            <label htmlFor="shy" className={styles.labels}>Shy:</label>
+            <Select options={shies}  styles={listStyles}/>
+            <label htmlFor="guardianName" className={styles.labels}>Guardian's name:</label>
+            <input type='text' name='guardianName' className={styles.inputFields}/>
+            <label htmlFor="guardianNo" className={styles.labels}>Guardian's No:</label>
+            <input type='text' name='guardianNo' className={styles.inputFields}/>
           </div>
           <div className={styles.register}>
-            <p>Have you not registered yet? </p>
-            <a href='#' className={styles.hyperLink}>Register</a>
+            <p>Are you already Registered? </p>
+            <a href='#' className={styles.hyperLink}>Login</a>
           </div>
-          <button type='submit' className={styles.btn} >LOGIN</button>
+          <button type='submit' className={styles.btn} >REGISTER</button>
         </div>
     </div>
   )

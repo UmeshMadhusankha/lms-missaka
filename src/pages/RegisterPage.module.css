@@ -7,7 +7,7 @@
 .container {
     font-family: 'Roboto',sans-serif;
     width: 100%;
-    height: 225vh;
+    height: 250vh;
     background-color: #012128;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     width: 60vw;
-    height: 200vh;
+    height: 215vh;
     background-color: rgba(255, 255, 255, 0.1);
     margin-top: 7vh;
     margin-bottom: 5vh;
