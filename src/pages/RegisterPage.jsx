@@ -2,8 +2,16 @@ import React from 'react'
 import styles from './RegisterPage.module.css'
 import GlowingBGCricle from '../components/glowingBGCricle/glowingBGCricle'
 import logo from '../assets/images/nameLogo.png'
+import Select from 'react-select'
 
 function RegisterPage() {
+
+  const streams = [
+    {value : "bio" ,label : "Bio Science"},
+    {value : "maths" ,label : "Physical Science"},
+    {value : "other" ,label : "Other"}
+  ]
+
   return (
     <div className={styles.container}>
         <div className={styles.ellipsContainer} >
@@ -75,12 +83,7 @@ function RegisterPage() {
             <input type='text' placeholder='Province' className={styles.inputFieldsAddr}/>
             <input type='text' placeholder='Postal Code' className={styles.inputFieldsAddr}/>
             <label htmlFor="stream" className={styles.labels}>Stream:</label>
-            <select className={styles.inputFields}>
-              <option value="" hidden></option>
-              <option value="bio" className={styles.selectOpts}>Bio Science</option>
-              <option value="maths">Physical Science</option>
-              <option value="other">Other</option>
-            </select>
+            <Select options={streams}  />
           </div>
           <div className={styles.register}>
             <p>Have you not registered yet? </p>
