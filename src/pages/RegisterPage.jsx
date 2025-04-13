@@ -12,6 +12,37 @@ function RegisterPage() {
     {value : "other" ,label : "Other"}
   ]
 
+  const listStyles = {
+    control : (styles) => ({...styles,
+      marginTop: "1vh",
+      borderRadius: "10px",
+      backgroundColor: "rgba(255, 255, 255, 0.1)",
+      borderColor: "rgba(255, 255, 255, 0.1)",
+      color: "whitesmoke",
+      padding: "10px",
+      fontSize: "larger",
+    }),
+    option : (styles, {data, isDisabled, isFocused, isSelected}) => (
+      {...styles,
+        borderRadius: "10px",
+        marginBottom: "1.5px",
+        backgroundColor: isFocused ? "#044a59" : "#027f9c" ,
+        borderColor: "white",
+        color: "whitesmoke",
+        padding: "15px",
+        fontSize: "larger",
+      }
+    ),
+    menu : (styles) => (
+      {
+        ...styles,
+        margin: "0px",
+        padding: "0px",
+        backgroundColor: "transparent"
+      }
+    )
+  }
+
   return (
     <div className={styles.container}>
         <div className={styles.ellipsContainer} >
@@ -83,7 +114,7 @@ function RegisterPage() {
             <input type='text' placeholder='Province' className={styles.inputFieldsAddr}/>
             <input type='text' placeholder='Postal Code' className={styles.inputFieldsAddr}/>
             <label htmlFor="stream" className={styles.labels}>Stream:</label>
-            <Select options={streams}  />
+            <Select options={streams}  styles={listStyles}/>
           </div>
           <div className={styles.register}>
             <p>Have you not registered yet? </p>
