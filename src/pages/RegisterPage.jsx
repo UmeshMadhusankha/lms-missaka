@@ -56,13 +56,31 @@ function RegisterPage() {
           <img src={logo} className={styles.logo}/>
         </div>
         <div className={styles.main} >
-          <p className={styles.login}>LOGIN</p>
+          <p className={styles.login}>Register</p>
           <hr className={styles.divider}/>
           <div className={styles.fields}>
-            <label htmlFor="username" className={styles.labels}>Student ID:</label>
+            <label htmlFor="username" className={styles.labels}>Name:</label>
             <input type='text' name='username' className={styles.inputFields}/>
-            <label htmlFor="password" className={styles.labels}>Password:</label>
-            <input type='password' name='password' className={styles.inputFields}/>
+            <label htmlFor="school" className={styles.labels}>School:</label>
+            <input type='text' name='school' className={styles.inputFields}/>
+            <label htmlFor="mobNumber" className={styles.labels}>Mobile Number:</label>
+            <input type='text' name='mobNumber' className={styles.inputFields}/>
+            <label htmlFor="WANumber" className={styles.labels}>Whatsapp Number:</label>
+            <input type='text' name='WANumber' className={styles.inputFields}/>
+            <label htmlFor="address" className={styles.labels}>Address:</label>
+            <input type='text' name='address' placeholder='Line 1' className={styles.inputFieldsAddr}/>
+            <input type='text' placeholder='Line 2' className={styles.inputFieldsAddr}/>
+            <input type='text' placeholder='Line 3' className={styles.inputFieldsAddr}/>
+            <input type='text' placeholder='District' className={styles.inputFieldsAddr}/>
+            <input type='text' placeholder='Province' className={styles.inputFieldsAddr}/>
+            <input type='text' placeholder='Postal Code' className={styles.inputFieldsAddr}/>
+            <label htmlFor="stream" className={styles.labels}>Stream:</label>
+            <select className={styles.inputFields}>
+              <option value="" hidden></option>
+              <option value="bio" className={styles.selectOpts}>Bio Science</option>
+              <option value="maths">Physical Science</option>
+              <option value="other">Other</option>
+            </select>
           </div>
           <div className={styles.register}>
             <p>Have you not registered yet? </p>
