@@ -74,17 +74,23 @@ function RegisterPage() {
               col4="rgba(99,255,232,0.65)"
               left="85vw" 
               top="17vh"/>
+            
             <GlowingBGCricle
               size="40vw"
-              maxSize="280px"
+              maxSize="300px"
               maxLeft="-3"
-              maxBottom="-25vh"
+              maxBottom="-100vh"
               col1="rgba(243, 7, 255, 0.5)"
               col2="rgba(147, 2, 155,0.75)"
               col3="rgba(122, 27, 114, 0.5)"
               col4="rgba(96, 14, 121, 0.5)"
               left="80vw"
               bottom="-100vh"/>
+            
+            <GlowingBGCricle 
+              size="40vw"
+              maxSize="280px"
+            />
             <GlowingBGCricle className={styles.glowingCircle}
               size="45vw"
               maxSize="315px"
