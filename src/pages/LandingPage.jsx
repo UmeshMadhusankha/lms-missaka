@@ -53,24 +53,28 @@ function LandingPage() {
               left="-15vw" 
               bottom="5vh"/>
         </div>
-        <div className={styles.image}>
-          <img src={logo} className={styles.logo}/>
-        </div>
+        
         <div className={styles.main} >
-          <p className={styles.login}>LOGIN</p>
-          <hr className={styles.divider}/>
-          <div className={styles.fields}>
-            <label htmlFor="username" className={styles.labels}>Student ID:</label>
-            <input type='text' name='username' className={styles.inputFields}/>
-            <label htmlFor="password" className={styles.labels}>Password:</label>
-            <input type='password' name='password' className={styles.inputFields}/>
+
+          <div className={styles.main1}>
+            {<img src={sir} className={styles.sirImg} />}
           </div>
-          <div className={styles.register}>
-            <p>Have you not registered yet? </p>
-            <a href='#' className={styles.hyperLink}>Register</a>
+
+          <div className={styles.main2}>
+            <div className={styles.image}>
+                <img src={logo} className={styles.logo}/>
+            </div>
+            <div className={styles.loginWrapper} >
+            <button type='submit' className={styles.btn} >Log In</button>
+            </div>
+            <div className={styles.register}>
+                <p>New here? join our class today by Registering below! </p>
+            </div>
+            <button type='submit' className={styles.btn} >Register</button>
           </div>
-          <button type='submit' className={styles.btn} >LOGIN</button>
+
         </div>
+
     </div>
   )
 }
