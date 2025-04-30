@@ -154,12 +154,44 @@
     .login {font-size: 40px;}
 }
 
-@media (max-width: 550px) {
-    .register {width: 350px; display: block; text-align: center;}
-    .labels {font-size: 17px;}
-    .fields {width: 275px;}
-    .divider {width: 275px;}
-    .login {font-size: 35px;}
-    .main {width: 300px;}
-    .btn {margin-top: 20px}
+@media (max-width: 820px) {
+    .main {
+        width: 80vw;
+        height: 90%;
+        display: block;
+        position: relative;
+        bottom: 5vh;
+    }
+    .main1 {
+        width: 80%;
+        height: 55%;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+    .image {
+        position: absolute;
+        top: -17vh;
+    }
+    .main2 {
+        /*border: 2px solid red;*/
+        width: 100%;
+    }
+    .interactive {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 2%;
+    }
+    .loginWrapper {
+        margin: 0;
+    }
+    .register { width: 100%;}
+    .btn { 
+        margin-bottom: -0.5vh;
+        font-size: large;
+    }
 }

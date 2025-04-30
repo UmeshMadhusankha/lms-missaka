@@ -64,13 +64,16 @@ function LandingPage() {
             <div className={styles.image}>
                 <img src={logo} className={styles.logo}/>
             </div>
-            <div className={styles.loginWrapper} >
-            <button type='submit' className={styles.btn} >Log In</button>
+
+            <div className={styles.interactive} >
+              <div className={styles.loginWrapper} >
+                <button type='submit' className={styles.btn} >Log In</button>
+              </div>
+              <div className={styles.register}>
+                  <p>New here? join our class today by Registering below! </p>
+              </div>
+              <button type='submit' className={styles.btn} >Register</button>
             </div>
-            <div className={styles.register}>
-                <p>New here? join our class today by Registering below! </p>
-            </div>
-            <button type='submit' className={styles.btn} >Register</button>
           </div>
 
         </div>
