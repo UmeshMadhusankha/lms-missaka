@@ -8,6 +8,7 @@
     font-family: 'Roboto',sans-serif;
     width: 100%;
     height: 100vh;
+    overflow: auto;
     background-color: #012128;
     display: flex;
     flex-direction: column;
@@ -28,6 +29,7 @@
     align-items: center;
     width: 60vw;
     height: 70vh;
+    min-height: 490.25px;
     background-color: rgba(255, 255, 255, 0.1);
     margin-top: 0vh;
     margin-bottom: 5vh;
@@ -133,5 +135,11 @@
 }
 
 @media (min-height: 775px) {
-    
+    .main {min-height: 490.25px;}
+    .fields {min-height: 241.625px;}
+    .register {min-height: 51px; font-size: 16px;}
+    .btn {min-height: 38.75px; font-size: 13.3333px;}
+    .inputFields {min-height: 34.875px; font-size: 19.2px;}
+    .login {min-height: 67px; font-size: 56px;}
+    .labels {min-height: 29px; font-size: 24px;}
 }
