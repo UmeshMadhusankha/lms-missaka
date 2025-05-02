@@ -17,7 +17,8 @@
 .image {
     width: 55vw;
     height: 20vh;
-    max-width: 550px;
+    min-height: 246px;
+    max-width: 525px;
     z-index: 2;
 }
 
@@ -26,9 +27,9 @@
     flex-direction: column;
     align-items: center;
     width: 60vw;
-    height: 65vh;
+    height: 70vh;
     background-color: rgba(255, 255, 255, 0.1);
-    margin-top: 7vh;
+    margin-top: 0vh;
     margin-bottom: 5vh;
     border-radius: 10px;
     z-index: 1;
@@ -44,7 +45,8 @@
 
 .logo {
     width: inherit;
-    max-width: 525px;
+    max-width: 501px;
+    min-height: 225px;
 }
 
 .login {
@@ -52,7 +54,7 @@
     margin-top: 5vh;
     margin-bottom: -0.4vh;
     text-align: center;
-    font-size: 4vw;
+    font-size: 3.5em;
     font-weight: 500;
 }
 
@@ -88,15 +90,15 @@
 
 .labels {
     color: white;
-    font-size: 2vw;
+    font-size: 1.5em;
     font-weight: 575;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
 }
 
 .inputFields {
     margin-top: 1vh;
-    margin-bottom: 2vh;
-    height: 5vh;
+    margin-bottom: 1.75vh;
+    height: 4.5vh;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.1);
@@ -109,7 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: 1em;
     color: white;
     width: 50vw;
 }
@@ -122,21 +124,14 @@
     font-size: large;
 }
 
-@media (min-width: 1000px) {
-    .register {width: 500px;}
-    .labels {font-size: 20px;}
-    .fields {width: 500px;}
-    .divider {width: 500px;}
-    .login {font-size: 40px;}
-    .main {width: 600px;}
+@media (min-width: 500px) and (max-width: 821px) {
+    
 }
 
-@media (max-width: 550px) {
-    .register {width: 350px; display: block; text-align: center;}
-    .labels {font-size: 17px;}
-    .fields {width: 275px;}
-    .divider {width: 275px;}
-    .login {font-size: 35px;}
-    .main {width: 300px;}
-    .btn {margin-top: 20px}
+@media (max-width: 500px) {
+    
+}
+
+@media (min-height: 775px) {
+    
 }
