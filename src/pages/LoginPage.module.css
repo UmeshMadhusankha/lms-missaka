@@ -127,11 +127,17 @@
 }
 
 @media (min-width: 500px) and (max-width: 821px) {
-    
+    .image {margin-top: 5vh;}
+    .inputFields {margin-top: 2vh; margin-bottom: 3vh;}
+    .register {margin-top: 1vh; margin-bottom: 4vh;}
 }
 
 @media (max-width: 500px) {
-    
+    .login {font-size: 2.5em;}
+    .main {width: 90vw;}
+    .divider {width: 75vw;}
+    .fields {width: 75vw;}
+    .register {width: 75vw; margin-top: 2vh; margin-bottom: 4vh;}
 }
 
 @media (min-height: 775px) {
@@ -140,6 +146,6 @@
     .register {min-height: 51px; font-size: 16px;}
     .btn {min-height: 38.75px; font-size: 13.3333px;}
     .inputFields {min-height: 34.875px; font-size: 19.2px;}
-    .login {min-height: 67px; font-size: 56px;}
+    .login {min-height: 67px;}
     .labels {min-height: 29px; font-size: 24px;}
 }
