@@ -20,6 +20,7 @@
     height: 20vh;
     min-height: 246px;
     max-width: 525px;
+    min-width: 325px;
     z-index: 2;
 }
 
@@ -49,6 +50,7 @@
     width: inherit;
     max-width: 501px;
     min-height: 225px;
+    min-width: 325px;
 }
 
 .login {
