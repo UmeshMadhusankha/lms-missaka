@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './HomePage.module.css';
+import footer from '../assets/images/Home/footer.png'; 
 
 const HomePage = () => {
     return (
@@ -25,7 +26,9 @@ const HomePage = () => {
             </div>
 
             {/* Footer */}
-            <div className={styles.footer}>Footer Section</div>
+            <div className={styles.footer}>
+                <img src={footer} alt="Footer" className={styles.footerImage} />
+            </div>
         </div>
     );
 };
