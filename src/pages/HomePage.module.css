@@ -4,11 +4,41 @@ body,html {
     padding: 0;
     height: 100%;
 }
+
 .navbar {
     width: 95%;
-    height: 50px; /* Adjust height as needed */
+    height: 6.179vw; /* Adjust height as needed */
     background-color: #4CAF50; /* Green */
-    margin: 0 auto;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLeft {
+    width: 18.68%; /* Same width as footerLeft */
+    height: 100%; /* Full height of the navbar */
+    display: flex;
+    align-items: center;
+}
+
+.navbarLeftTop {
+    width: 100%; /* Full width of the parent */
+    height: 56.75%; /* Same height as footerLeftTop */
+    background-color: #FF5722; /* Example color, change as needed */
+}
+
+.navbarRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Space between the buttons */
+}
+
+.navbarButton {
+    width: 2.5vw; /* Square dimensions for the buttons */
+    height: 2.5vw;
+    background-color: #FFC107; /* Example color, change as needed */
 }
 
 .twoSections {
@@ -64,17 +94,36 @@ body,html {
 
 .footer {
     width: 100%;
-    height: 18.3919vw; /* Adjust height as needed */
+    height: 18.3919vw; /* Same height as the previous footerImage */
     background-color: #607D8B; /* Blue Grey */
-    margin-top: 100px;
-    text-align: center;
-    line-height: 50px; /* Center text vertically */
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Optional padding */
 }
 
-.footerImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+.footerLeft {
+    width: 18.68%; /* 0.1868 of the footer width */
+    height: 59.2%; /* 0.592 of the footer height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerLeftTop {
+    width: 100%; /* Full width of the parent */
+    height: 56.75%; /* 0.5675 of the parent height */
+    background-color: #FF5722; /* Example color, change as needed */
+}
+
+.footerLeftBottom {
+    width: 100%; /* Full width of the parent */
+    height: 22.97%; /* 0.2297 of the parent height */
+    background-color: #4CAF50; /* Example color, change as needed */
+}
+
+.footerRight {
+    flex: 1; /* Takes up the remaining space */
+    background-color: #FFC107; /* Example color, change as needed */
 }
 

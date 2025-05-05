@@ -10,7 +10,16 @@ const HomePage = () => {
     return (
         <div className={styles.container}>
             {/* Navbar-like section */}
-            <div className={styles.navbar}>Navbar Section</div>
+            <div className={styles.navbar}>
+                <div className={styles.navbarLeft}>
+                    <div className={styles.navbarLeftTop}></div>
+                </div>
+                <div className={styles.navbarRight}>
+                    <div className={styles.navbarButton}></div>
+                    <div className={styles.navbarButton}></div>
+                    <div className={styles.navbarButton}></div>
+                </div>
+            </div>
 
             {/* Two sections below navbar */}
             <div className={styles.twoSections}>
@@ -39,7 +48,13 @@ const HomePage = () => {
 
             {/* Footer */}
             <div className={styles.footer}>
-                <img src={footer} alt="Footer" className={styles.footerImage} />
+                <div className={styles.footerLeft}>
+                    <div className={styles.footerLeftTop}></div>
+                    <div className={styles.footerLeftBottom}></div>
+                </div>
+                <div className={styles.footerRight}>
+                    <p>Developed By UCSC</p>
+                </div>
             </div>
         </div>
     );
