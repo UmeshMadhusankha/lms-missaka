@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './HomePage.module.css';
 import footer from '../assets/images/Home/footer.png'; 
-import classes from '../assets/images/Home/Classes.png';
-import marks from '../assets/images/Home/Marks.png';
-import notifications from '../assets/images/Home/Notifications.png';
-import store from '../assets/images/Home/Store.png';
+import classes from '../assets/images/Home/Classes.svg';
+import marks from '../assets/images/Home/Marks.svg';
+import notifications from '../assets/images/Home/Notifications.svg';
+import store from '../assets/images/Home/Store.svg';
 
 const HomePage = () => {
     return (

@@ -1,5 +1,9 @@
 /* HomePage.module.css */
-
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 .navbar {
     width: 95%;
     height: 50px; /* Adjust height as needed */
@@ -34,7 +38,7 @@
 }
 
 .fourDivsContainer {
-    width: 95%;
+    width: 100%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -43,10 +47,10 @@
 }
 
 .smallDiv {
-    width: 22%; /* Adjusted for margin */
-    height: 22vw; /* Adjust height as needed */
+    width: 25%; /* Adjusted for margin */
+    height: 25vw; /* Adjust height as needed */
     background-color: #9C27B0; /* Purple */
-    margin: 10px;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,10 +63,10 @@
 }
 
 .footer {
-    width: 95%;
+    width: 100%;
     height: 18.3919vw; /* Adjust height as needed */
     background-color: #607D8B; /* Blue Grey */
-    margin: 20px auto;
+    margin-top: 100px;
     text-align: center;
     line-height: 50px; /* Center text vertically */
     color: white;
@@ -73,3 +77,4 @@
     height: 100%;
     object-fit: cover; 
 }
+
