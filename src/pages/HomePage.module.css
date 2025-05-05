@@ -1,0 +1,59 @@
+/* HomePage.module.css */
+
+.navbar {
+    width: 95%;
+    height: 50px; /* Adjust height as needed */
+    background-color: #4CAF50; /* Green */
+    margin: 0 auto;
+}
+
+.twoSections {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.section25 {
+    width: 25%;
+    height: 20%;
+    background-color: #2196F3; /* Blue */
+}
+
+.section70 {
+    width: 70%;
+    height: 40%;
+    background-color: #FFC107; /* Amber */
+}
+
+.wideSection {
+    width: 95%;
+    height: 60px; /* Slightly taller than navbar */
+    background-color: #FF5722; /* Deep Orange */
+    margin: 20px auto;
+}
+
+.fourDivsContainer {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.smallDiv {
+    width: 22%; /* Adjusted for margin */
+    height: 100px; /* Adjust height as needed */
+    background-color: #9C27B0; /* Purple */
+    margin: 10px;
+}
+
+.footer {
+    width: 95%;
+    height: 50px; /* Adjust height as needed */
+    background-color: #607D8B; /* Blue Grey */
+    margin: 20px auto;
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+    color: white;
+}
