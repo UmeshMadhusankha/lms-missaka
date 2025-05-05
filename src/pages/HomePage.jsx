@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './HomePage.module.css';
 import footer from '../assets/images/Home/footer.png'; 
+import classes from '../assets/images/Home/Classes.png';
+import marks from '../assets/images/Home/Marks.png';
+import notifications from '../assets/images/Home/Notifications.png';
+import store from '../assets/images/Home/Store.png';
 
 const HomePage = () => {
     return (
@@ -19,10 +23,18 @@ const HomePage = () => {
 
             {/* Section with 4 small divs */}
             <div className={styles.fourDivsContainer}>
-                <div className={styles.smallDiv}>Div 1</div>
-                <div className={styles.smallDiv}>Div 2</div>
-                <div className={styles.smallDiv}>Div 3</div>
-                <div className={styles.smallDiv}>Div 4</div>
+                <div className={styles.smallDiv}>
+                    <img src={classes} alt="Classes" className={styles.icon} />
+                </div>
+                <div className={styles.smallDiv}>
+                    <img src={marks} alt="Marks" className={styles.icon} />
+                </div>
+                <div className={styles.smallDiv}>
+                    <img src={notifications} alt="Notifications" className={styles.icon} />
+                </div>
+                <div className={styles.smallDiv}>
+                    <img src={store} alt="Store" className={styles.icon} />
+                </div>
             </div>
 
             {/* Footer */}
