@@ -32,12 +32,25 @@ body,html {
     justify-content: space-between;
     align-items: center;
     gap: 10px; /* Space between the buttons */
+    margin-right: 10px;
 }
 
 .navbarButton {
-    width: 2.5vw; /* Square dimensions for the buttons */
-    height: 2.5vw;
-    background-color: #FFC107; /* Example color, change as needed */
+    width: 2vw; /* Square dimensions for the buttons */
+    height: 2vw;
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbarButtonImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the button while maintaining aspect ratio */
 }
 
 .twoSections {
@@ -112,7 +125,6 @@ body,html {
 .footerLeftTop {
     width: 100%; /* Full width of the parent */
     height: 56.75%; /* 0.5675 of the parent height */
-    background-color: #FF5722; /* Example color, change as needed */
 }
 
 .footerLeftBottom {
@@ -124,5 +136,26 @@ body,html {
 .footerRight {
     flex: 1; /* Takes up the remaining space */
     background-color: #FFC107; /* Example color, change as needed */
+}
+
+.btn {
+    text-align: center;
+    width: 5vw;
+    height: 2vw;
+    max-width: 104px;
+    max-height: 52px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: small;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-color: rgba(255, 255, 255, 0.1);
 }
 

@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './HomePage.module.css';
-import footer from '../assets/images/Home/footer.png'; 
+
 import classes from '../assets/images/Home/Classes.svg';
 import marks from '../assets/images/Home/Marks.svg';
 import notifications from '../assets/images/Home/Notifications.svg';
 import store from '../assets/images/Home/Store.svg';
 import logo from '../assets/images/Home/whiteLogo.svg'; 
+import bell from '../assets/images/Home/bell-notification.svg';
+import profile from '../assets/images/Home/profile-circled.svg'; 
 
 const HomePage = () => {
     return (
@@ -16,9 +18,13 @@ const HomePage = () => {
                     <img src={logo} className={styles.navbarLeftTop} />
                 </div>
                 <div className={styles.navbarRight}>
-                    <div className={styles.navbarButton}></div>
-                    <div className={styles.navbarButton}></div>
-                    <div className={styles.navbarButton}></div>
+                <button className={styles.navbarButton}>
+                    <img src={bell} alt="Classes" className={styles.navbarButtonImage} />
+                </button>
+                <button className={styles.navbarButton}>
+                    <img src={profile} alt="Marks" className={styles.navbarButtonImage} />
+                </button>
+                    <button type='submit' className={styles.btn} >Log Out</button>
                 </div>
             </div>
 
