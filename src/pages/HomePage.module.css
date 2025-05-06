@@ -31,8 +31,7 @@ body,html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px; /* Space between the buttons */
-    margin-right: 10px;
+    gap: 15px; /* Space between the buttons */
 }
 
 .navbarButton {

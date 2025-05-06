@@ -24,9 +24,11 @@ const HomePage = () => {
                 <button className={styles.navbarButton}>
                     <img src={profile} alt="Marks" className={styles.navbarButtonImage} />
                 </button>
-                    <button type='submit' className={styles.btn} >Log Out</button>
-                </div>
+                <button type='submit' className={styles.btn} >
+                    Log Out
+                </button>
             </div>
+        </div>
 
             {/* Two sections below navbar */}
             <div className={styles.twoSections}>
