@@ -5,6 +5,7 @@ import classes from '../assets/images/Home/Classes.svg';
 import marks from '../assets/images/Home/Marks.svg';
 import notifications from '../assets/images/Home/Notifications.svg';
 import store from '../assets/images/Home/Store.svg';
+import logo from '../assets/images/Home/whiteLogo.svg'; 
 
 const HomePage = () => {
     return (
@@ -12,7 +13,7 @@ const HomePage = () => {
             {/* Navbar-like section */}
             <div className={styles.navbar}>
                 <div className={styles.navbarLeft}>
-                    <div className={styles.navbarLeftTop}></div>
+                    <img src={logo} className={styles.navbarLeftTop} />
                 </div>
                 <div className={styles.navbarRight}>
                     <div className={styles.navbarButton}></div>
@@ -49,7 +50,7 @@ const HomePage = () => {
             {/* Footer */}
             <div className={styles.footer}>
                 <div className={styles.footerLeft}>
-                    <div className={styles.footerLeftTop}></div>
+                    <img src={logo} className={styles.footerLeftTop} />
                     <div className={styles.footerLeftBottom}></div>
                 </div>
                 <div className={styles.footerRight}>

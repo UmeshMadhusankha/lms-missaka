@@ -24,8 +24,7 @@ body,html {
 
 .navbarLeftTop {
     width: 100%; /* Full width of the parent */
-    height: 56.75%; /* Same height as footerLeftTop */
-    background-color: #FF5722; /* Example color, change as needed */
+    height: 100%; 
 }
 
 .navbarRight {
