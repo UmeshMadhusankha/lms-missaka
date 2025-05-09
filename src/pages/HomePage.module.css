@@ -72,11 +72,15 @@ body,html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white; /* Text color */
 }
 
 .section70Top {
     height: 7%; /* 0.07 of the parent's height */
     background-color: #FF5722; /* Example color, change as needed */
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
 }
 
 .section70Bottom {

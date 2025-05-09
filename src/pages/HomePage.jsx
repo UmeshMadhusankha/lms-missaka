@@ -38,7 +38,9 @@ const HomePage = () => {
                     <div className={styles.welcome}>Welcome to the LMS</div>
                 </div>
                 <div className={styles.section70}>
-                    <div className={styles.section70Top}></div>
+                    <div className={styles.section70Top}>
+                        Gain knowledge every day...
+                    </div>
                     <div className={styles.section70Bottom}></div>
                 </div>
             </div>
