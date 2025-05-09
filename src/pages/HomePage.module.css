@@ -69,6 +69,19 @@ body,html {
     width: 65%;
     height: 45vw;
     background-color: #FFC107; /* Amber */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section70Top {
+    height: 7%; /* 0.07 of the parent's height */
+    background-color: #FF5722; /* Example color, change as needed */
+}
+
+.section70Bottom {
+    height: 90%; /* 0.9 of the parent's height */
+    background-color: #4CAF50; /* Example color, change as needed */
 }
 
 .wideSection {
