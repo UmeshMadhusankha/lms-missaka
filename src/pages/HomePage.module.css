@@ -61,13 +61,13 @@ body,html {
 
 .section25 {
     width: 25%;
-    height: 20%;
+    height: 30vw;
     background-color: #2196F3; /* Blue */
 }
 
 .section70 {
-    width: 70%;
-    height: 40%;
+    width: 65%;
+    height: 45vw;
     background-color: #FFC107; /* Amber */
 }
 
@@ -156,5 +156,21 @@ body,html {
     background-color: white;
     color: black;
     border-color: rgba(255, 255, 255, 0.1);
+}
+
+.userName {
+    font-size: 4.5vw; /* Adjust font size as needed */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white; /* Text color */
+    margin: 10px; /* Space between icon and text */
+    background-color: tomato;
+    height: 5vw;
+}
+
+.welcome {
+    margin-left: 10px;
+    color: white
 }
 

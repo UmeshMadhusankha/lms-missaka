@@ -32,8 +32,12 @@ const HomePage = () => {
 
             {/* Two sections below navbar */}
             <div className={styles.twoSections}>
-                <div className={styles.section25}>25% Width, 20% Height</div>
-                <div className={styles.section70}>70% Width, 40% Height</div>
+                <div className={styles.section25}>
+                    <div className={styles.userName}>Hello,</div>
+                    <div className={styles.userName}>User Name</div>
+                    <div className={styles.welcome}>Welcome to the LMS</div>
+                </div>
+                <div className={styles.section70}>65% Width, 40% Height</div>
             </div>
 
             {/* Section below the two sections */}
