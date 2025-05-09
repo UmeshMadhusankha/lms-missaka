@@ -41,7 +41,21 @@ const HomePage = () => {
                     <div className={styles.section70Top}>
                         Gain knowledge every day...
                     </div>
-                    <div className={styles.section70Bottom}></div>
+                    <div className={styles.section70Bottom}>
+                        {/* Div 1 */}
+                        <div className={styles.div1}>
+                            <button className={`${styles.toggleButton} ${styles.active}`}>On</button>
+                            <button className={styles.toggleButton}>Off</button>
+                        </div>
+
+                        {/* Div 2 */}
+                        <div className={styles.div2}>
+                            Albert Einstein
+                        </div>
+
+                        {/* Div 3 */}
+                        <div className={styles.div3}></div>
+                    </div>
                 </div>
             </div>
 

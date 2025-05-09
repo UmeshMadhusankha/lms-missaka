@@ -85,7 +85,56 @@ body,html {
 
 .section70Bottom {
     height: 90%; /* 0.9 of the parent's height */
-    background-color: #4CAF50; /* Example color, change as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Example color, change as needed */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between child divs on the y-axis */
+    align-items: center; /* Center child divs on the x-axis */
+    padding: 0 10px; /* Optional padding */
+}
+
+.div1 {
+    height: 5%; /* 0.05 of parent height */
+    width: 9.8%; /* 0.098 of parent width */
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    align-items: center;
+    margin-right: 10px; /* Margin to the right */
+    margin-left: auto; /* Push div1 to the right */
+}
+
+.toggleButton {
+    width: 48%; /* Equal size for both buttons */
+    height: 100%;
+    background-color: #ccc; /* Default background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggleButton.active {
+    background-color: #4CAF50; /* Active button background */
+    color: white;
+}
+
+.div2 {
+    height: 7.5%; /* 0.075 of parent height */
+    width: 90%; /* 0.26 of parent width */
+    background-color: #FF5722; /* Example color */
+    align-self: center; /* Center on x-axis */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    font-size: 2vw; /* Adjust font size as needed */
+    text-decoration: underline;}
+
+.div3 {
+    height: 68%; /* 0.68 of parent height */
+    width: 94%; /* 0.94 of parent width */
+    background-color: #FFC107; /* Example color */
+    align-self: center; /* Center on x-axis */
 }
 
 .wideSection {
