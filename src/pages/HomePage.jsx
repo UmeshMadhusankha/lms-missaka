@@ -101,7 +101,7 @@ const toggleButton = () => {
                     <div className={styles.footerLeftBottom}></div>
                 </div>
                 <div className={styles.footerRight}>
-                    <p>Developed By UCSC</p>
+                    <p className={styles.credentials}>Developed By UCSC</p>
                 </div>
             </div>
         </div>

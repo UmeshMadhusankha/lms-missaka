@@ -98,7 +98,6 @@ body,html {
     height: 5%; /* 0.05 of parent height */
     width: 9.8%; /* 0.098 of parent width */
     display: flex;
-    justify-content: space-between; /* Space between buttons */
     align-items: center;
     margin-right: 10px; /* Margin to the right */
     margin-left: auto; /* Push div1 to the right */
@@ -107,7 +106,7 @@ body,html {
 .toggleButton {
     width: 48%; /* Equal size for both buttons */
     height: 100%;
-    background-color: #ccc; /* Default background */
+    background-color: rgba(217, 217, 217, 0.4); /* Default background */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -115,7 +114,7 @@ body,html {
 }
 
 .toggleButton.active {
-    background-color: #4CAF50; /* Active button background */
+    background-color: rgba(217, 217, 217, 1); /* Active button background */
     color: white;
 }
 
@@ -201,6 +200,12 @@ body,html {
 .footerRight {
     flex: 1; /* Takes up the remaining space */
     background-color: #FFC107; /* Example color, change as needed */
+}
+
+.credentials {
+    text-align: right;
+    width: 95%;
+    color: white;
 }
 
 .btn {
