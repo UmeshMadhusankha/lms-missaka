@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './HomePage.module.css';
 
 import classes from '../assets/images/Home/Classes.svg';
@@ -10,6 +10,17 @@ import bell from '../assets/images/Home/bell-notification.svg';
 import profile from '../assets/images/Home/profile-circled.svg'; 
 
 const HomePage = () => {
+
+// implementing the functionality of the buttons
+const [sinBtn,setSinBtn] = useState(true);
+const [engBtn,setEngBtn] = useState(false);
+
+const toggleButton = () => {
+    setSinBtn(!sinBtn);
+    setEngBtn(!engBtn);
+    console.log("clicked");
+}
+
     return (
         <div className={styles.container}>
             {/* Navbar-like section */}
@@ -37,6 +48,7 @@ const HomePage = () => {
                     <div className={styles.userName}>User Name</div>
                     <div className={styles.welcome}>Welcome to the LMS</div>
                 </div>
+
                 <div className={styles.section70}>
                     <div className={styles.section70Top}>
                         Gain knowledge every day...
@@ -44,8 +56,12 @@ const HomePage = () => {
                     <div className={styles.section70Bottom}>
                         {/* Div 1 */}
                         <div className={styles.div1}>
-                            <button className={`${styles.toggleButton} ${styles.active}`}>On</button>
-                            <button className={styles.toggleButton}>Off</button>
+                            <button className={`${styles.toggleButton} ${sinBtn ? styles.active : ''}`} onClick={toggleButton}>
+                                Sin
+                            </button>
+                            <button className={`${styles.toggleButton} ${engBtn ? styles.active : ''}`} onClick={toggleButton}>
+                                Eng
+                            </button>
                         </div>
 
                         {/* Div 2 */}
