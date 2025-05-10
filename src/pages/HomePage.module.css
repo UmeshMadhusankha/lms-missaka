@@ -89,7 +89,7 @@ body,html {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space between child divs on the y-axis */
+    justify-content: space-around; /* Space between child divs on the y-axis */
     align-items: center; /* Center child divs on the x-axis */
     padding: 0 10px; /* Optional padding */
 }
@@ -139,7 +139,7 @@ body,html {
 
 .wideSection {
     width: 95%;
-    height: 60px; /* Slightly taller than navbar */
+    height: 7.846vw; /* Slightly taller than navbar */
     background-color: #FF5722; /* Deep Orange */
     margin: 20px auto;
 }
