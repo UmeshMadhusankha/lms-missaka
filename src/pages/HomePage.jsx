@@ -7,9 +7,16 @@ import notifications from '../assets/images/Home/Notifications.svg';
 import store from '../assets/images/Home/Store.svg';
 import logo from '../assets/images/Home/whiteLogo.svg'; 
 import bell from '../assets/images/Home/bell-notification.svg';
-import profile from '../assets/images/Home/profile-circled.svg'; 
+import profile from '../assets/images/Home/profile-circled.svg';
+import fbLogo from '../assets/images/Home/facebook.svg';
+import whatsappLogo from '../assets/images/Home/whatsapp.svg'; 
+import ytLogo from '../assets/images/Home/youtube.svg';
+import telegramLogo from '../assets/images/Home/telegram.svg';
 
 const HomePage = () => {
+
+    // variables like place holder
+    
 
 // implementing the functionality of the buttons
 const [sinBtn,setSinBtn] = useState(true);
@@ -70,13 +77,22 @@ const toggleButton = () => {
                         </div>
 
                         {/* Div 3 */}
-                        <div className={styles.div3}></div>
+                        <div className={styles.div3}>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam accusamus necessitatibus! Aliquid, deserunt quidem. Nostrum eos, provident, harum corporis reiciendis laboriosam aliquid officiis quas placeat, nesciunt minus laborum? Facilis?
+                        </div>
                     </div>
                 </div>
             </div>
 
             {/* Section below the two sections */}
-            <div className={styles.wideSection}>95% Width Section</div>
+            <div className={styles.wideSection}>
+                <div className={styles.wideSectionUpper}>
+                    afjebakfhevodkvdvjlhdijn jwwfoeflejdk kfjvlrih 
+                </div>
+                <div className={styles.wideSectionLower}>
+                    nmjkjkko
+                </div>
+            </div>
 
             {/* Section with 4 small divs */}
             <div className={styles.fourDivsContainer}>
@@ -98,7 +114,20 @@ const toggleButton = () => {
             <div className={styles.footer}>
                 <div className={styles.footerLeft}>
                     <img src={logo} className={styles.footerLeftTop} />
-                    <div className={styles.footerLeftBottom}></div>
+                    <div className={styles.footerLeftBottom}>
+                        <button className={styles.socialButton}>
+                            <img src={fbLogo} alt="Facebook" className={styles.socialIcon} />
+                        </button>
+                        <button className={styles.socialButton}>
+                            <img src={ytLogo} alt="YouTube" className={styles.socialIcon} />
+                        </button>
+                        <button className={styles.socialButton}>
+                            <img src={whatsappLogo} alt="WhatsApp" className={styles.socialIcon} />
+                        </button>
+                        <button className={styles.socialButton}>
+                            <img src={telegramLogo} alt="Telegram" className={styles.socialIcon} />
+                        </button>
+                    </div>
                 </div>
                 <div className={styles.footerRight}>
                     <p className={styles.credentials}>Developed By UCSC</p>
