@@ -16,6 +16,12 @@ import telegramLogo from '../assets/images/Home/telegram.svg';
 const HomePage = () => {
 
     // variables like place holder
+    let userName = "User Name";
+    let scientistName = "Albert Einstein";
+    let scientistNameSinhala = "ඇල්බට්‍ අයින්ස්ටයින්";
+    let scientistMessage = "Life is like riding a bicycle. To keep your balance, you must keep moving.";
+    let scientistMessageSinhala = "ජීවිතය බයිසිකලයක් රියැදීම වැනි දෙයකි. ඔබේ සමාන්‍යතාවය තබා ගැනීමට, ඔබට ඉදිරියට යාමට සිදු වේ.";
+    let scientistQuote = "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.";
     
 
 // implementing the functionality of the buttons
@@ -52,7 +58,7 @@ const toggleButton = () => {
             <div className={styles.twoSections}>
                 <div className={styles.section25}>
                     <div className={styles.userName}>Hello,</div>
-                    <div className={styles.userName}>User Name</div>
+                    <div className={styles.userName}>{userName}</div>
                     <div className={styles.welcome}>Welcome to the LMS</div>
                 </div>
 
@@ -73,12 +79,12 @@ const toggleButton = () => {
 
                         {/* Div 2 */}
                         <div className={styles.div2}>
-                            Albert Einstein
+                            {sinBtn ? scientistNameSinhala : scientistName}
                         </div>
 
                         {/* Div 3 */}
                         <div className={styles.div3}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam accusamus necessitatibus! Aliquid, deserunt quidem. Nostrum eos, provident, harum corporis reiciendis laboriosam aliquid officiis quas placeat, nesciunt minus laborum? Facilis?
+                            {sinBtn ? scientistMessageSinhala : scientistMessage}
                         </div>
                     </div>
                 </div>
@@ -87,10 +93,10 @@ const toggleButton = () => {
             {/* Section below the two sections */}
             <div className={styles.wideSection}>
                 <div className={styles.wideSectionUpper}>
-                    afjebakfhevodkvdvjlhdijn jwwfoeflejdk kfjvlrih 
+                    {scientistQuote}
                 </div>
                 <div className={styles.wideSectionLower}>
-                    nmjkjkko
+                    {scientistName}
                 </div>
             </div>
 
