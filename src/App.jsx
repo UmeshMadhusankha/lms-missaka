@@ -1,4 +1,5 @@
 import GlowingBGCricle from "./components/glowingBGCricle/glowingBGCricle"
+import ClassesPage from "./pages/ClassesPage"
 import HomePage from "./pages/HomePage"
 import LandingPage from "./pages/LandingPage"
 import LoginPage from "./pages/LoginPage"
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <HomePage />
+      <ClassesPage />
     </div>
   )
 }
